@@ -80,31 +80,31 @@ int main(){
 
   string qualcosa(parola.lunghezza(), ('_')); 
 
-  cout << "\n\nIndovina il nome di uno stato;
-  cout << "\n\nOgni lettera e' un asterisco";
-  cout << "\n\nDevi inserire solo una lettera alla volta"; 
-  cout << "\n\nHai " << tentativi_max << " tentativi per indovinare";  
+  cout << "\nnIndovina il nome di uno stato;
+  cout << "\nnOgni lettera e' un asterisco";
+  cout << "\nnDevi inserire solo una lettera alla volta"; 
+  cout << "\nnHai " << tentativi_max << " tentativi per indovinare";  
   cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl; 
   
   while (tentativiSbagliati < tentativi_max){
     cout << endl << hint << endl;
     cout << "\n\n" << qualcosa;     
-    cout << "\n\nIndovina una lettera: ";    
+    cout << "\nnIndovina una lettera: ";    
     cin >> si_o_no;                      
     if (riempiLettere(si_o_no, parola, qualcosa) == 0){
-      cout << endl << "\n\Lettera non presente" << endl;
+      cout << endl << "\nLettera non presente" << endl;
       tentativiSbagliati++;
     }
     else{
       cout << endl << "\n\Lettera trovata" << endl; 
     }
-    cout << "\n\Hai ancora" << tentativi_max - tentativiSbagliati;
+    cout << "\nHai ancora" << tentativi_max - tentativiSbagliati;
     cout << " tentativi rimasti" << endl;
     if (parola == qualcosa){
       cout << parola << endl;
-      cout << "\n\Hai indovinato << endl;
-      cout << "\n\WVuoi giocare un altro turno?" << endl;
-      cout << "\n\Inserisci si o no" << endl; 
+      cout << "\nHai indovinato << endl;
+      cout << "\nWVuoi giocare un altro turno?" << endl;
+      cout << "\nInserisci si o no" << endl; 
 
       cin >> si_o_no;
 
@@ -120,10 +120,10 @@ int main(){
     }
   }
   if (tentativiSbagliati == tentativi_max) {
-    cout << "\n\Hai perso" << endl;
-    cout << "\n\La parola era " << parola << endl;
-    cout << "\n\Vuoi giocare un altro turno?" << endl;
-    cout << "\n\Inserisci si o no" << endl;
+    cout << "\nHai perso" << endl;
+    cout << "\nLa parola era " << parola << endl;
+    cout << "\nVuoi giocare un altro turno?" << endl;
+    cout << "\nInserisci si o no" << endl;
     cin >> si_o_no;
     if (si_o_no == "si"){
       main();
