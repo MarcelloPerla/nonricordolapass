@@ -80,16 +80,16 @@ int main(){
 
   string qualcosa(parola.lunghezza(), ('_')); 
 
-  cout << "\nnIndovina il nome di uno stato;
-  cout << "\nnOgni lettera e' un asterisco";
-  cout << "\nnDevi inserire solo una lettera alla volta"; 
-  cout << "\nnHai " << tentativi_max << " tentativi per indovinare";  
+  cout << "\nIndovina il nome di uno stato;
+  cout << "\nOgni lettera e' un asterisco";
+  cout << "\nDevi inserire solo una lettera alla volta"; 
+  cout << "\nHai " << tentativi_max << " tentativi per indovinare";  
   cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl; 
   
   while (tentativiSbagliati < tentativi_max){
     cout << endl << hint << endl;
     cout << "\n\n" << qualcosa;     
-    cout << "\nnIndovina una lettera: ";    
+    cout << "\nIndovina una lettera: ";    
     cin >> si_o_no;                      
     if (riempiLettere(si_o_no, parola, qualcosa) == 0){
       cout << endl << "\nLettera non presente" << endl;
